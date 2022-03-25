@@ -1,0 +1,14 @@
+.cart-body {
+  padding: 0 15px;
+}
+.cart-body > p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+.grand-total {
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  margin-top: 30px;
+}
