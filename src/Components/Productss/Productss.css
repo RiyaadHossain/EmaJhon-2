@@ -1,0 +1,27 @@
+.main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    margin-top: 50px;
+    grid-gap: 30px;
+}
+.cart{
+    background-color: #ffe0b3;
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width:1260px) {
+    .main{
+        grid-template-columns: 3.3fr 1fr;
+    }
+    .product-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

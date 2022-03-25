@@ -1,12 +1,25 @@
-import React from 'react';
-import './Product.css'
+import React, { useEffect, useState } from "react";
+import Product from "../Product/Product";
+import "./Productss.css";
 
 const Productss = () => {
-    return (
-        <div>
-            <h3>Productsss</h3>
-        </div>
-    );
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("products.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
+  console.log(products);
+  return (
+    <div className="main">
+      <div className="product-container">
+        {products.map((product) => (
+          <Product product={product} key={product.id} />
+        ))}
+      </div>
+      <div className="cart"></div>
+    </div>
+  );
 };
 
 export default Productss;
