@@ -1,0 +1,21 @@
+.navbar{
+    background: #1C2B35;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+.nav{
+    display: flex;
+}
+.nav > li{
+    list-style: none;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 0 15px;
+    font-weight: bold;
+    font-size: 20;
+}
